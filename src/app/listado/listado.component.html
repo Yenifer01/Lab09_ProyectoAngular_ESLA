@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="container">
     <div class="d-flex justify-content-center">
-      <h2 class="text-center mb-4 bg-warning mt-3 p-2 d-inline-block rounded">Lugares Turísticos del Perú</h2>
+      <h2 class="text-center mb-4 text-decoration-underline text-muted mt-3 p-2 d-inline-block rounded">Lugares Turísticos del Perú</h2>
     </div>
       <div class="row">
         <div class="col-md-4" *ngFor="let foto of fotos">
@@ -9,11 +9,10 @@
             <img class="card-img-top" [src]="foto.url" alt="Foto">
             <div class="card-body">
               <h5 class="card-title">{{ foto.titulo }}</h5>
-              <p class="card-text">{{ foto.descripcion }}</p>
+              <p class="card-text mb-3">{{ foto.descripcion }}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 </div>
-  
